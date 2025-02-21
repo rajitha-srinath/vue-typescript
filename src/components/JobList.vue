@@ -1,6 +1,6 @@
 <template>
     <div class="job-list">
-        <p>Ordered by {{ order }}</p>
+        <h3>Ordered by {{ order }}</h3>
         <ul>
             <li v-for="job in orderedData" :key="job.id">
                 <h2>{{ job.title }} in {{ job.location }}</h2>
@@ -52,11 +52,24 @@ ul {
     list-style-type: none;
 }
 
+.job-list {
+    margin-left: 40px auto;
+}
+
+.job-list ul {
+    padding: 0;
+}
+
 .job-list li {
-    margin: 20px 20px;
-    background-color: #fff;
-    padding: 5px 10px;
+    list-style-type: none;
+    background: white;
     border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.job-list h3 {
+    text-align: center;
 }
 
 .description {

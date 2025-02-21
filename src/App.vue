@@ -62,6 +62,19 @@ export default defineComponent({
 
 <style>
 header {
+  display: flex;
+  /* display: inline-block; */
   text-align: center;
+  margin: 5px 10px;
+  justify-content: center;
+  gap: 15px;
+}
+
+header button {
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 </style>
